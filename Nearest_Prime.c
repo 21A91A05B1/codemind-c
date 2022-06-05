@@ -26,7 +26,7 @@ int main()
                 break;
             }
         }
-         for(j=arr[i];j<=arr[i]+10;j++)
+        for(j=arr[i];j<=arr[i]+10;j++)
         {
             c=0;
             for(k=1;k<=j;k++)
@@ -42,17 +42,16 @@ int main()
                 e=sp-arr[i];
                 break;
             }
-        }    
-        if(d<e ||d==e)
+        }
+        if(d<e || d==e)
         {
             printf("%d
 ",np);
         }
         else
-        { 
+        {
             printf("%d
 ",sp);
         }
     }
-    
 }
