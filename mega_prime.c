@@ -19,7 +19,7 @@ int main()
     if(p==2)
     {
         while(n!=0)
-        {
+        {   
             rem=n%10;
             n=n/10;
             if(rem!=0)
@@ -41,7 +41,7 @@ int main()
                 }
                 fc=0;
             }
-        }
+        }   
         if(k==1)
         {
             printf("Mega Prime");
