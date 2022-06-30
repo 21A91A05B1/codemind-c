@@ -1,0 +1,39 @@
+#include<stdio.h>
+int main()
+{
+    int n,i,arr[100],c=0,j,flag=0,val[100];
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d",&arr[i]);
+        val[i]=-1;
+    }
+    for(i=0;i<n;i++)
+    {
+        c=1;
+        for(j=i+1;j<n;j++)
+        {
+            if(arr[i]==arr[j])
+            {
+                c++;
+                val[j]=0;
+            }
+        }
+        if(val[i]!=0)
+        {
+            val[i]=c;
+        }
+    }
+    for(i=0;i<n;i++)
+    {
+        if(val[i]==1)
+        {
+            flag=1;
+            printf("%d ",arr[i]);
+        }
+    }
+    if(flag==0)
+    {
+        printf("-1");
+    }
+}
